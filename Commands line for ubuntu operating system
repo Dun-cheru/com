@@ -1,0 +1,217 @@
+....................HOW TO INSTALL JAVA.............
+
+  Open terminal and type the following 
+    {java -version} (this helps you to know if java is already installed in your pc)
+  if not installed the type
+    {sudo apt-get install openkjd-8-jre} press <enter>
+ Then wait for it to install
+
+....................HOW TO INSTALL AIRCRACK.............
+
+  Open terminal and type the following
+    {sudo apt-get install aircrack-ng} press <enter>
+
+....................HOW TO INSTALL YOUR UPDATES...........
+
+   Type the following
+  {sudo apt-get install full-upgrade} prress <enter>
+
+.....................HOW TO INSTALL NMAP................
+    Type the following 
+  {sudo apt-get install nmap}
+.....................HOW TO INSTALL PYTHON..............
+ 
+    Type the following
+  {sudo apt-get install python} press<enter>
+and click yes
+How to navigate through the terminal between directories use cd/ to move use cd to go back
+
+.....................HOW TO INSTALL BURPSUITE.............
+
+   But you need java jdk
+       Go to chrome search burpsuite in the search bar click downloads 
+          download for linux
+The go to the terminal..type the following
+   {cd Downloads/} press <enter>
+   loacate the burpsuite file then type 
+  {chmod u+x (paste the burpsuite file} press <enter>
+  type {ls} to confirm it is executable (green highlight meaning it is executable)
+  or type  {ls -lah} to comfirm
+type {./(copy and paste the burpsuite name and press enter}
+install the Burpsuite 
+
+..................HOW TO CRACK A WI-FI PASSWORD.............
+
+REQUIREMENTS:Download aircrack-ng
+             Download reaver
+{<.How to download aircrack-ng>}
+Go to chrome type [download aircrack for ubuntu]
+Open terminal and type the following 
+    {sudo apt-get install aircrack-ng} press<enter>
+    {iwconfig} press<enter>
+    {sudo airmon-ng start <type the interface code>}press <enter>(this will turn on the monitor mode on.
+    {sudo airodump-ng <type the interface code and add the word(mod)} press <enter>
+ wait..... till it sniffs all the WI-FI packets..
+    {sudo airodump-ng <type the interface code>
+......................Command line........................
+ pwd;Prints the path of the current directory to the screen.
+ Ls; Lists out the contents of the current folder.
+ Cd directory-name;Changes the current directory to the one specified
+ Cd or Cd~; Changes the current directory to the home directory.
+ Cd..; Changes the current the current directory up one level.
+ Mkdir directory-name; Creates a new directory (folder) in the current directory with the name specified.
+ touch file-name.html; Creates a new, empty file in the current directory with the name specified.
+ cp original-file.html new-file.html; Creates a duplicate copy of the first file listed and gives it the name of the second file listed. Both file still exist
+ mv original file-name.html new-file-name.html; Moves the content of the first file into the second file Effectively renames the file.
+ mv sample-file.html new-location/sample-file.html; Moves the first file into the folder specified for the second file.
+ rm -rf directory-name; Removes the folder specified and all the files inside.
+ clear; Clears the terminal screen.
+.............HOW TO INSTALL DUKTO ON UBUNTU.........
+Type the following command on your terminal
+sudo apt-get install gdebi press enter
+click y for yes to install
+Type the following link on your terminal
+ wget download.opensuse.org/repositories/home:/colomboem/xUbuntu_12.04/amd64/dukto_6.0-1_amd64.deb
+click enter 
+then type the following gdebi dukto_6.0-1_amd64.deb then click enter
+
+..........HOW TO INSTALL NETCAT......
+go to this website sourceforge,net enter
+Go to downloads and click the sourceforge link and copy the one on the search bar
+Open the terminal type...wget [paste the link you copied and press enter]
+Wait till it downloads it ...........
+Type ls to list the directories 
+open the directory that contains netcat i.e cd Downloads/ press enter
+Type ls to check if the netcat exists there? if it does type the following command line
+[tar -xzf netcat-0.7.1.tar.gz] .....then type
+[cd netcat-0.7.1/] .....press enter to change its directory..then type?
+[./configure] press enter...then type?
+[make] press enter.....then type?
+[sudo make install]
+TYPE NC TECH H (nc -h) to confirm the new version of netcat is intalled.
+........HOW TO HIDE MY IP ADDRESS...........
+Type in sudo apt-get install 4nonimizer
+type ls to list the directories in your pc
+Type cd ./4nonimize
+Type sudo ./4nonimizer install
+Type sudo ./4nonimizer start
+.............HOW TO CHAT IN TERMINAL USING FACEBOOKCLS.........
+Type in
+sudo apt-get install curl python-software-properties
+curl -sL https://deb.modesource.com/setup_12.x |sudo bash
+node -v
+npm -v
+Sudo apt-get install npm
+open another terminal
+Type in
+sudo apt-get install cryptcat
+sudo apt-get install -y nodejs
+sudo apt-get install -y build-essential
+............How to chat using the netcat.......
+typ in
+sudo apt-get install netcat
+type in 
+nc -l -p 31337
+open the other terminal
+type the ifconfig
+nc the [ip address] and type the port number 31337
+NB note that it is not encrpted
+..............HOW TO INSTALL BITTORRENT........
+Open the terminal and type
+sudo apt-get install qbittorrent
+then type
+qbittorrent to open
+.........HOW TO INSTALL GO LANG [GO LANGUAGE].........
+Open the terminal and type in the following
+sudo -s hit enter
+type in apt-get update hit enter
+type in the following link
+wget -q https://storage.googleapis.com/golang/getgo/installer_linux  then hit enter
+type in
+chmod +x installer_linux hit enter
+type in
+./ installer_linux hit enter
+type in
+source/home/hunter/.bash_profile hit enter
+type in
+go version hit enter
+you have succefully installed golang on your device
+............HOW TO INSTALL OPENSSH-SERVER...........
+Open terminal and type
+sudo apt-get install openssh-server hit enter
+To open the server type in
+sudo systemctl status ssh
+if not running enable the by typing
+sudo systemctl enable ssh or sudo systemctl start ssh
+configure the firewall and open port 22 by typing the following
+sudo ufw allow ssh or
+sudo ufw enable 
+sudo ufw status
+type in ifconfig and copy the Ip address
+ssh hunter@IP adress
+public key 
+ssh-copy-id
+..........HOW TO INSTALL VPN TO HIDE YOUR IP ADDRESS........
+Open any browser and type in {vpnbook} hit enter
+select the US1 OPENVPN CERTICATEBUNDLE 
+Open the terminal type in 
+sudo apt-get install openvpn
+type to change to downloads directory 
+cd Downloads
+type ls
+type {unzip VPNBook.com-openVPN-US1.zip}
+after unzipping tyoe in the following
+ sudo openvpn vpnbook-us1-tcp443.ovpn hit enter
+type the password get it from the browser you got the openvpn
+for me it was username:vpnbook
+              password:vBeD3Fz
+its succefully completed.
+...........HOW TO INSTALL JOHN THE RIPPER IN LINUX.......
+Open the terminal and type 
+sudo apt-get install john the ripper and hit enter
+.........HOW TO INSTALL METASPLOIT............
+Open the terminal and paste the following link
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb>msfinstall && \ {hit enter}
+then paste this too
+chmod 755 msfinstall && \ {hit enter}
+then type this again
+./msfinstall
+be patient as it finishes to download...........
+then type msfconsole
+type in 
+db_status
+search fileformat
+success
+
+..............HOW TO USE JOHN THE RIPPER.........
+useradd -m blackhat -G sudo -s /bin/bash
+passwd blackhat
+unshadow
+unshadow /etc/passwd /etc/shadow > /root/file_to_crack
+..................HOW TO GET ANY INTERNET PASSWORD..........
+Open terminal and type the following
+cd Desktop
+git clone https://github.com/thelinuxchoice/shellphish.git <hit enter>
+cd shellphish/
+ls
+chmod +x shellphish.sh
+./shellphish.sh
+success
+Add battery percentage on conky...
+Battery$alignr${battery_percent BAT0}%
+${battery_bar}${battery_percent BAT0}%
+ACPI $alignr ${acpiacadapter}
+add also this where neccessary
+${color yellow}${execi 3600 date +"%A %B %d, %Y (Week: %V)"}
+${execi 1  date +"%T"}${color C2BAB6}
+...
+PC Temperature ${execi 8 sensors | grep -A 1 'temp1' | cut -c13-21 | sed '/^$/d'}C
+
+for HDD
+${color grey}File systems:
+/ $color${fs_used /}/${fs_size /} ${fs_bar 6 /}
+${color grey}Storage:
+/Storage $color${fs_used /dev/sda2}/${fs_size /dev/sda2} ${fs_bar 6 /dev/sda2}
+
+${time %a, %d %b} ${color B3492B}${time %H:%M}$color ${utime (%H:%M)}  ${acpitemp}
+
